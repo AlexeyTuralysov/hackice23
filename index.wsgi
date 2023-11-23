@@ -2,7 +2,7 @@
 
 import os
 import sys
-sys.path.append('/home/c/ce33320/venv/lib/python3.10/site-packages/')
+sys.path.append('/home/u/user/venv/lib/python3.6/site-packages/')
 
 from flask import Flask, render_template, redirect, url_for, request
 from flask import render_template, flash,redirect, url_for, make_response, request, session
@@ -12,7 +12,7 @@ from datetime import datetime
 
 
 app = Flask(__name__)
-
+application = app
 app.secret_key = 'secret' 
 
 

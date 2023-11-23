@@ -74,6 +74,32 @@
 
   </div>
 
+
+  <link rel="stylesheet" href="/static/css/btnchat.css">
+  <div id="chat-container">
+    <button id="button-chat" onclick="toggleBlock()">
+        <img src="/static/image/Group 7.png" alt="Button Image">
+    </button>
+</div>
+
+<div id="block">
+    <!-- Содержимое блока -->
+    <p>Ваш помощник</p>
+
+    <img src="/static/image/Group 8.png" alt="">
+    
+    <input style=" margin-top: 120px; margin-left: 10px; width: 400px; border-radius: 20px; padding: 20px;" type="text" placeholder="Спроси меня о чем-нибудь" >
+</div>
+
+<script>
+  function toggleBlock() {
+      var block = document.getElementById("block");
+      block.style.display = (block.style.display === "none" || block.style.display === "") ? "block" : "none";
+  }
+</script>
+
+
+
   {% else %}
 
   <header>
