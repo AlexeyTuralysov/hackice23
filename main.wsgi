@@ -1,5 +1,9 @@
 # app.py
 
+import os
+import sys
+sys.path.append('/home/u/user/venv/lib/python3.6/site-packages/')
+
 from flask import Flask, render_template, redirect, url_for, request
 from flask import render_template, flash,redirect, url_for, make_response, request, session
 
