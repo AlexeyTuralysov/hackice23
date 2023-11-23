@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+
+{% block head %}
+  {{ super() }}
+  <style type="text/css">
+    .important { color: #336699; }
+  </style>
+{% endblock %}
+
+{% block content %}
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap');
+  </style>
+
+<body>
+
+    <link rel="stylesheet" href="/static/css/search.css">
+    <div class="container_s">
+        <h1>Найти продукты</h1>
+    </div>
+
+    <div class="container_sr">      
+        <form method="post" action="/search">
+            <div class="input-container">
+                <input type="text" placeholder="хочу кушать" id="search_term" name="search_term" required>
+                <button type="submit">поиск</button>
+            </div>
+        </form>
+
+    </div>
+
+    <div class="container_s">
+        <div class="green-block-text">
+            oreo
+        </div>
+        <div class="green-block-text">
+            печенье
+        </div>
+        <div class="green-block-text">
+            вода
+        </div>
+
+
+    </div>
+
+    <div class="container_down">
+
+    </div>
+
+
+    
+    {% endblock %}
+
+</body>
+
+</html>
