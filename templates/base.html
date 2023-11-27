@@ -46,7 +46,7 @@
       <input type="text" placeholder="Ваш текст" onfocus="redirectToPage()">
     </div>
 
-   
+
 
     <a class="basket-link" href="/basket">
       <img src="/static/image/free-icon-font-shopping-cart-add (1) 1.png" alt="">
@@ -78,25 +78,63 @@
   <link rel="stylesheet" href="/static/css/btnchat.css">
   <div id="chat-container">
     <button id="button-chat" onclick="toggleBlock()">
-        <img src="/static/image/Group 7.png" alt="Button Image">
+      <img src="/static/image/Group 7.png" alt="Button Image">
     </button>
-</div>
+  </div>
 
-<div id="block">
+  <div id="block">
     <!-- Содержимое блока -->
     <p>Ваш помощник</p>
 
     <img src="/static/image/Group 8.png" alt="">
-    
-    <input style=" margin-top: 120px; margin-left: 10px; width: 400px; border-radius: 20px; padding: 20px;" type="text" placeholder="Спроси меня о чем-нибудь" >
-</div>
 
-<script>
-  function toggleBlock() {
+    <style>
+      /* Стиль для создания круглой картинки */
+      .round-image {
+        display: flex;
+        background-color: rgb(230, 230, 230);
+        width: 50px;
+        /* Задайте ширину картинки */
+        height: 50px;
+        /* Задайте высоту картинки */
+        border-radius: 50%;
+        /* Создаем круг с помощью скругленных углов (50%) */
+        overflow: hidden;
+        /* Обрезаем все, что выходит за пределы круга */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        margin-top: 120px;
+        margin-left: 420px;
+      }
+
+      .round-image img {
+        color: #838383;
+        width: 20px;
+      }
+    </style>
+
+    <div style="display: flex; ">
+      <input style=" margin-top: 120px; margin-left: 10px; width: 350px; border-radius: 20px; padding: 20px;"
+        type="text" placeholder="Спроси меня о чем-нибудь">
+
+      <div class="round-image">
+        <img src="/static/image/672px-Font_Awesome_5_solid_arrow-up.svg.png" alt="Круглая картинка">
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <script>
+    function toggleBlock() {
       var block = document.getElementById("block");
       block.style.display = (block.style.display === "none" || block.style.display === "") ? "block" : "none";
-  }
-</script>
+    }
+  </script>
 
 
 
@@ -129,24 +167,24 @@
       <input type="text" placeholder="Ваш текст" onfocus="redirectToPage()">
     </div>
 
-   
+
 
     <a class="basket-link" href="/basket">
       <img src="/static/image/free-icon-font-shopping-cart-add (1) 1.png" alt="">
     </a>
 
-  
-      <div class="right-guest">
-        <p>Гость</p>
-      </div>
+
+    <div class="right-guest">
+      <p>Гость</p>
+    </div>
 
 
 
-   
-      <a class="user-link" href="/login">
-        <img src="/static/image/free-icon-font-user (5) 1.png" alt="">
-      </a>
-  
+
+    <a class="user-link" href="/login">
+      <img src="/static/image/free-icon-font-user (5) 1.png" alt="">
+    </a>
+
 
 
 
